@@ -13,7 +13,7 @@ import static com.codeborne.selenide.Selenide.open;
 public class ControlJUnit5Test {
 
     @BeforeAll
-    static void beforeAll() {
+    static void beforeAllTest() {
         Configuration.baseUrl = "https://github.com";
         Configuration.browserSize = "1920x1080";
     }
@@ -23,7 +23,7 @@ public class ControlJUnit5Test {
         Configuration.holdBrowserOpen = true;
     }
     @Test
-    void FindingSoftAssertionsTest() {
+    void FindSoftAssertionsTest() {
         open("/selenide/selenide");
         $("#wiki-tab").click();
         $("#wiki-pages-box").$(withText("more pages")).click();
