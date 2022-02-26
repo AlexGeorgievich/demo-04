@@ -29,7 +29,6 @@ public class DragAndDrop {
         $$("#column-a").shouldHave(texts("B"));
         $$("#column-b").shouldHave(texts("A"));
 
-
     }
 }
 
